@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.taofe.dicomviewer.DragPhotoView
+        android:id="@+id/dicomviewer_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:enabledrag="false"
+        app:enablezoom="true">
+    </com.taofe.dicomviewer.DragPhotoView>
+    <TextView
+        android:id="@+id/info_window_wl_zoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:id="@+id/info_series_counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+</RelativeLayout>

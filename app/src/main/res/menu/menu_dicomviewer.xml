@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="search"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/dicomviewer_option1"
+                android:title="打开单张图像" />
+            <item
+                android:id="@+id/dicomviewer_option2"
+                android:title="打开图像序列" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/dicom_mpr"
+        android:title="MPR处理"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/dicom_3d"
+        android:title="3D浏览"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/dicomviewer_about"
+        android:title="关于软件"
+        app:showAsAction="never"/>
+</menu>

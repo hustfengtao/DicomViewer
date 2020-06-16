@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/item_toolbar_border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_border"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/item_toobar_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/image_bg_selector"
+        android:scaleType="fitCenter"
+        android:layout_margin="2dp"/>
+</RelativeLayout>

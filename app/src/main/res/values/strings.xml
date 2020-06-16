@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dicom图像浏览工具</string>
+    <string name="nav_text2">com.taofe.dicomviewer</string>
+    <string name="nav_text1">android studio</string>
+    <string name="overstring">已经到最后了</string>
+    <string name="accessibility_service_description">智能安装服务，无需用户的任何操作就可以自动安装程序。</string>
+    <string name="native_behavior">com.taofe.dicomviewer.NativeBehavior</string>
+    <string name="navi_open">Open Navi</string>
+    <string name="navi_close">Close Navi</string>
+    <string name="about">苏州海斯菲德南京研发中心\n
+                            南京市玄武区苏园路6号6栋106室\n
+                            Phone: 18914727626\n
+                            Tel: 0512-81668251\n
+                            Email: ge.dong@szhiscan.com</string>
+</resources>

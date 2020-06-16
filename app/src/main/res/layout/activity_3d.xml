@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/view3d_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/white"
+        app:navigationIcon="@android:drawable/ic_menu_close_clear_cancel"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="3D View"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.opengl.GLSurfaceView
+            android:id="@+id/view3d_glview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"/>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view3d_rotate_flag"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            app:cardBackgroundColor="@color/transparent"
+            app:cardCornerRadius = "16dp">
+            <ImageView
+                android:src="@mipmap/rotate_3d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/view3d_camera1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"/>
+            <ImageView
+                android:id="@+id/view3d_camera2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"/>
+            <ImageView
+                android:id="@+id/view3d_camera3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ZoomControls
+            android:id="@+id/view3d_zoom_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true">
+        </ZoomControls>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.taofe.dicomviewer.BubbleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:paddingBottom="6dp"
+    app:background_color="@color/colorAccent"
+    app:direction="bottom"
+    app:radius="4dp">
+
+    <TextView
+        android:id="@+id/dicomviewer_ct_value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="10sp" />
+</com.taofe.dicomviewer.BubbleLayout>
