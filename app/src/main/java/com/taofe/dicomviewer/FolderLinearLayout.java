@@ -38,7 +38,7 @@ public class FolderLinearLayout extends LinearLayout {
                 , defStyle, 0);
         isExpand = array.getBoolean(R.styleable.FolderLinearLayout_expend, true);
         animationDuration = array.getInt(R.styleable.FolderLinearLayout_animationduration, 500);
-
+        setWillNotDraw(false);
         initView();
     }
 
@@ -64,6 +64,7 @@ public class FolderLinearLayout extends LinearLayout {
 
     @Override
     protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
         mPaint.setAlpha(255);
         mPaint.setColor(Color.BLACK);
         mPaint.setStyle(Paint.Style.FILL);
@@ -74,7 +75,6 @@ public class FolderLinearLayout extends LinearLayout {
             mPaint.setStrokeWidth(5);
             canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), mPaint);
         }
-        super.onDraw(canvas);
     }
 
     protected void drawBorder(boolean draw){

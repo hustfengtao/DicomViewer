@@ -9,9 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"
-        android:layout_margin="1dp"
-        app:enabledrag="false"
-        app:enablezoom="true">
+        android:layout_margin="1dp">
     </uk.co.senab.photoview.PhotoView>
     <com.taofe.dicomviewer.CanvasView
         android:id="@+id/dicomviewer_canvas"

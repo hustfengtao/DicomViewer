@@ -28,15 +28,11 @@ public class DicomMPRActivity extends AppCompatActivity {
     private boolean windowSaveMode = false;
 
     private SeriesList seriesList = null;
-    private int windowWidth = 4096;
-    private int windowCenter = 2048;
     private ArrayList<Raster> rasterList = new ArrayList<Raster>();
     private SeekBar[] seekBar = new SeekBar[3];
     private ProgressBar loadProgress;
     private Raster[] raster = new Raster[3];
     private FolderPhotoView[] photo = new FolderPhotoView[3];
-    private int posX;
-    private int posY;
     private DicomImageReader reader = new DicomImageReader();
     private View viewCtrlPanel;
     private View viewAdjustWindow;
