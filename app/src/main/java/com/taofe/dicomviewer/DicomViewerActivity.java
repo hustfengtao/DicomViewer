@@ -255,6 +255,12 @@ public class DicomViewerActivity extends AppCompatActivity{
         super.onResume();
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
+
     private void InitView(){
         //float window of histogram
         windowManager = new FloatWindowManager(this);
